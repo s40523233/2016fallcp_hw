@@ -18,7 +18,7 @@
 <v t="leo.20151213173830.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
 <v t="leo.20151213085727.1"><vh>@button pelican-blog</vh></v>
 </v>
-<v t="amd.20151215180106.1"><vh>設定與開發</vh>
+<v t="amd.20151215180106.1" a="E"><vh>設定與開發</vh>
 <v t="amd.20151216151325.1" a="E"><vh>@clean index.html</vh>
 <v t="amd.20161004083800.1" a="E"><vh>html</vh>
 <v t="amd.20161004083800.2"><vh>head</vh></v>
@@ -169,7 +169,7 @@
 </v>
 </v>
 </v>
-<v t="amd.20160106094754.1"><vh>@path ./../content/pages</vh>
+<v t="amd.20160106094754.1" a="E"><vh>@path ./../content/pages</vh>
 <v t="amd.20160106094829.1" a="E"><vh>yen 所寫的 pages 文章</vh>
 <v t="amd.20160106094844.1"><vh>@edit pages_1.md</vh></v>
 </v>
@@ -303,16 +303,12 @@ print("hello")
 ### 虎科大機械設計工程系
 
 &lt;small&gt;
-Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
+Created by [s40523233](http://chiamingyen.github.io/kmolab/blog/)
 &lt;/small&gt;
 
-[甲班計算機程式課程網誌](blog/index.html)
+[s40523233](blog/index.html)
 
-[乙班計算機程式課程網誌](https://mdecourse.github.io/2016fallcpb/blog)
 
-[計算機程式教學影片](https://vimeo.com/user24079973)
-
-[電腦輔助設計室電腦硬體](http://project.mde.tw/blog/yen-dian-nao-fu-zhu-she-ji-shi-dian-nao-pei-zhi.html)
 </t>
 <t tx="amd.20161004104641.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
