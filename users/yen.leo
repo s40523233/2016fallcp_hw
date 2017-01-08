@@ -166,12 +166,10 @@
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="amd.20160727120222.1"><vh>@edit 20160921.md</vh></v>
 <v t="leo.20161014142409.1"><vh>@edit 20161014.md</vh></v>
-<v t="leo.20161031141953.1"><vh>@edit 20161104.md</vh></v>
-<v t="yen.20161105200835.1"><vh>@edit 20161105.md</vh></v>
 <v t="leo.20161127194150.1"><vh>@edit 20161114.md</vh></v>
 <v t="leo.20161127194237.1"><vh>@edit 20161121.md</vh></v>
 <v t="leo.20161210170906.1"><vh>@edit 20161210.md</vh></v>
-<v t="leo.20161212141647.1"><vh>@edit 20161212.md</vh></v>
+<v t="leo.20161212141647.1"><vh>@edit 20170108.md</vh></v>
 </v>
 </v>
 </v>
@@ -182,6 +180,7 @@
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
 <v t="yen.20161022111056.1"><vh>@button https server</vh></v>
+<v t="leo.20170108162413.1"><vh>@button ipv6 https server</vh></v>
 <v t="yen.20161022151749.1"><vh>產生 .key 與 .crt</vh></v>
 <v t="yen.20161105200127.1" a="E"><vh>選課人員名單</vh>
 <v t="yen.20161105200140.1"><vh>@edit a.txt</vh></v>
@@ -543,6 +542,34 @@ Created by [s40523233](http://chiamingyen.github.io/kmolab/blog/)
 
 
 </t>
+<t tx="leo.20170108162413.1">@language python
+import os
+import subprocess
+import threading
+import socket
+import http.server, ssl
+
+class HTTPServerV6(http.server.HTTPServer):
+    address_family = socket.AF_INET6
+  
+def domake():
+    # build directory
+    os.chdir("./../")
+    ipv6_address = '::1'
+    server_address = (ipv6_address, 6443)
+    #httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd = HTTPServerV6(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print("7443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
 <t tx="yen.20161011114704.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
