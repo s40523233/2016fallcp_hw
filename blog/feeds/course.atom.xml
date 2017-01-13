@@ -110,7 +110,9 @@ document['ch02'].bind('click',two_input)
 
 &lt;p&gt;&lt;button id="ch02"&gt;猜數字&lt;/button&gt;&lt;/p&gt;
 
-&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>w16</title><link href="./w16.html" rel="alternate"></link><published>2017-01-08T12:00:00+08:00</published><updated>2017-01-08T12:00:00+08:00</updated><author><name>40523233</name></author><id>tag:,2017-01-08:./w16.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;輸入程式執行命令遊戲&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>w16</title><link href="./w16.html" rel="alternate"></link><published>2017-01-08T12:00:00+08:00</published><updated>2017-01-08T12:00:00+08:00</updated><author><name>40523233</name></author><id>tag:,2017-01-08:./w16.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
